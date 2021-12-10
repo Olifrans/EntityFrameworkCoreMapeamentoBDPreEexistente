@@ -24,6 +24,8 @@ namespace MapeandoBDPreEexistente
 
 
 
+
+
             //select *from actor
             using (var contexto = new AluraFilmesContext())
             {
