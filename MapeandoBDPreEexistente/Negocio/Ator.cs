@@ -16,7 +16,12 @@ namespace MapeandoBDPreEexistente.Negocio
         public int Id { get; set; }        
         public string PrimeiroNome { get; set; }
         public string UltimoNome { get; set; }
+        public IList<FilmeAtor> Filmografia { get; set; }
 
+        public Ator()
+        {
+            Filmografia = new List<FilmeAtor>();
+        }
 
         //Sobrescrevendo o método ToString para que as informações de primeiro nome e último nome de cada ator se tornem visíveis.
         public override string ToString()
