@@ -38,6 +38,9 @@ namespace MapeandoBDPreEexistente
 
 
 
+
+
+
                 ////Log sql enviado para o BD
                 //contexto.LogSQLToConsole();
 
