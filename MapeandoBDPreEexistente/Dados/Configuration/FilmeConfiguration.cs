@@ -58,7 +58,7 @@ namespace MapeandoBDPreEexistente.Dados.Configuration
             //conf de relacionamento idoma falado
             builder
                 .HasOne(f => f.IdiomaFalado)
-                .WithMany(i => i.FilmeFalados)
+                .WithMany(i => i.FilmesFalados)
                 .HasForeignKey("language_id");
 
             //conf de relacionamento idoma original

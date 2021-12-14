@@ -19,13 +19,19 @@ namespace MapeandoBDPreEexistente
                 contexto.LogSQLToConsole();
 
                 var idiomas = contexto.Idiomas
-                    .Include(i => i.FilmeFalados); //select com Join
+                    .Include(i => i.FilmesFalados); //select com Join
 
-                foreach (var idioma in contexto.Idiomas)
+                foreach (var idioma in idiomas)
                 {
                     Console.WriteLine(idioma);
-                }
 
+                    foreach (var filme in idioma.FilmesFalados)
+                    {
+                        Console.WriteLine(filme);
+                    }
+                    Console.WriteLine("\n");
+                }
+                
 
 
 
